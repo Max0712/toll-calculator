@@ -1,0 +1,3 @@
+* Migration för att det är lätt att byta till t.ex. en MsSQL-databas.
+* SQLite för snabbt-test. (Lämnar i debug-mapp, lätt att byta i produktion)
+* Vi väljer att spara varje vägtulls-händelse, oavsett fordonstyp mm. för att lättare möta eventulla förändringar i framtiden. Eller statistik mm.
