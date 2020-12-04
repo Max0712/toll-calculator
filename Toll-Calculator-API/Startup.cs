@@ -1,16 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using Toll_Calculator_API.DbModels;
 using Toll_Calculator_API.Services;
+using Toll_Calculator_API.Mappings;
 
 namespace Toll_Calculator_API
 {
@@ -29,7 +26,11 @@ namespace Toll_Calculator_API
             services.AddCors();
             services.AddControllers();
 
-            //services.AddDbContext<tolldbContext>(options => options.UseSQLite(Configuration["ConnectionStrings:TollDatabase"]));
+            IMapper mapper = MapConfiguration.GetMapperConfiguration().CreateMapper();
+            services.AddSingleton(mapper);
+
+            services.AddDbContext<tollContext>(options => options.UseSqlite(Configuration["ConnectionStrings:TollDatabase"]));
+            
             services.AddScoped<ITollService, TollService>();
         }
 
