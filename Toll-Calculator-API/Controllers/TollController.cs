@@ -35,26 +35,29 @@ namespace Toll_Calculator_API.Controllers
                 return insertResult.ToHttpResult();
 
             // Här hade man kunnat låta processen fortsätta på annan tråd i bakgrunden.
-            await VehicleToTollUpdate(body, insertResult.Result.Id);
+            var updateResult = await VehicleToTollUpdate(body, insertResult.Result.Id);
+            if (!updateResult.IsSuccessStatusCode())
+                return updateResult.ToHttpResult();
 
             return Ok(body);
         }
 
-        [Route("getsum")]
+        [Route("sum")]
         [HttpGet]
-        public async Task<IActionResult> GetVehicleTullSum([FromBody] VehicleTollSum body)
+        public async Task<IActionResult> GetVehicleTollSum(string registrationNumber, DateTime fromDate, DateTime toDate)
         {
-            var vehicle = await _tollService.SelectVehicleAndEvents(body.RegistrationNumber, body.StartDate, body.EndDate);
-
+            var vehicle = await _tollService.SelectVehicleAndEvents(registrationNumber, fromDate, toDate);
             if (vehicle.VehicleType.IsFree)
-                return Ok(0);
+                return Ok(new VehicleTollSummary());
 
-            var tollFeeList = await _tollService.SelectAllTollFees(); 
+            //Använd "TollCalculations" för att summera resultat per dag
+            //Returnera som VehicleTollSummary
+            //
 
             return Ok();
         }
 
-        private async Task<Exception> VehicleToTollUpdate(TollEventRegistration body, long tollEventId)
+        private async Task<ServiceResult<bool>> VehicleToTollUpdate(TollEventRegistration body, long tollEventId)
         {
             var vehicle = await _tollService.SelectVehicle(body.RegistrationNumber);
             if (vehicle == null)
@@ -68,18 +71,16 @@ namespace Toll_Calculator_API.Controllers
 
                 //Här vill man självklart ha en riktig lösning
                 if (!vehicleResult.IsSuccessStatusCode())
-                    return vehicleResult.Exception;
+                    return new ServiceResult<bool>(vehicleResult.Exception);
 
                 vehicle = vehicleResult.Result;
             }
 
             var updateResult = await _tollService.SetTollEventVehicle(tollEventId, vehicle.Id);
             if (!updateResult.IsSuccessStatusCode())
-                return updateResult.Exception;
+                return new ServiceResult<bool>(updateResult.Exception);
 
-            return null;
+            return new ServiceResult<bool>(true);
         }
-
-
     }
 }

@@ -93,11 +93,10 @@ namespace Toll_Calculator_API.Services
         public async Task<Vehicle> SelectVehicleAndEvents(string registrationNumber, DateTime startDate, DateTime endDate)
         {
             return await _context.Vehicle
-                .Where(x => x.RegistrationNumber == registrationNumber)
+                .Where(x => x.RegistrationNumber == registrationNumber)            
+                .Include(x => x.VehicleTollEvents.Where(e => e.EventTime > startDate && e.EventTime < endDate))
                 .Include(x => x.VehicleType)
-                .Include(x => x.VehicleTollEvents.Select(x => x.EventTime > startDate && x.EventTime < endDate))
                 .FirstOrDefaultAsync();
-
         }
 
         public async Task<IEnumerable<TollFee>> SelectAllTollFees()
