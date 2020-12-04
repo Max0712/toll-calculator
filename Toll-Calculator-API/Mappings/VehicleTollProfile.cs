@@ -6,9 +6,9 @@ using AutoMapper;
 
 namespace Toll_Calculator_API.Mappings
 {
-    public class TollProfile : Profile
+    public class VehicleTollProfile : Profile
     {
-        public TollProfile()
+        public VehicleTollProfile()
         {
 
         }

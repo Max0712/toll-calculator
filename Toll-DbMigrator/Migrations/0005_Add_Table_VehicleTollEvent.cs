@@ -10,7 +10,8 @@ namespace Toll_DbMigrator.Migrations
             Create.Table("VehicleTollEvent")
                 .WithColumn("Id").AsInt64().PrimaryKey().Identity()
                 .WithColumn("EventTime").AsDateTime().NotNullable()
-                .WithColumn("VehicleId").AsGuid().NotNullable();
+                .WithColumn("RegistrationNumber").AsString().NotNullable()
+                .WithColumn("VehicleId").AsInt64().Nullable();
 
             Create.ForeignKey()
                 .FromTable("VehicleTollEvent").ForeignColumn("VehicleId")

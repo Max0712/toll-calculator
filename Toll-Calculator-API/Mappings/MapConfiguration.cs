@@ -8,7 +8,7 @@ namespace Toll_Calculator_API.Mappings
         {
             return new MapperConfiguration(cfg =>
             {
-                cfg.AddProfile(new TollProfile());
+                cfg.AddProfile(new VehicleTollProfile());
             });
         }
     }    
