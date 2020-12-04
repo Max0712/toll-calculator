@@ -36,7 +36,7 @@ namespace Toll_DbMigrator
                 .AddFluentMigratorCore()
                 .ConfigureRunner(rb => rb
                     .AddSQLite()                    
-                    .WithGlobalConnectionString("Data Source=toll.db")                    
+                    .WithGlobalConnectionString("Data Source=../../../../toll.db")                    
                     .ScanIn(typeof(_0001_AddTable_Log).Assembly).For.Migrations())
                 .AddLogging(lb => lb.AddFluentMigratorConsole())
                 .BuildServiceProvider(false);
