@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Toll_Calculator_API.DbModels;
+using Toll_Calculator_API.Models;
 
 namespace Toll_Calculator_API.Mappings
 {
@@ -10,7 +12,18 @@ namespace Toll_Calculator_API.Mappings
     {
         public VehicleTollProfile()
         {
+            CreateMap<VehicleTypeModel, VehicleType>();
+            CreateMap<VehicleType, VehicleTypeModel>();
 
+            CreateMap<VehicleModel, Vehicle>(); 
+            CreateMap<Vehicle, VehicleModel>();
+
+            CreateMap<VehicleTollEventModel, VehicleTollEvent>();
+            CreateMap<VehicleTollEvent, VehicleTollEventModel>();
+
+            CreateMap<TollFeeModel, TollFee>();
+            CreateMap<TollFee, TollFeeModel>();
+          
         }
     }
 }
