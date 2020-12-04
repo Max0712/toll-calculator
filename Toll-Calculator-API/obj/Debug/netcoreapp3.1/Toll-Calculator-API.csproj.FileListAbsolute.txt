@@ -47,3 +47,15 @@ F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcore
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Toll-Calculator-API.deps.json
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Toll-Calculator-API.runtimeconfig.json
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Toll-Calculator-API.runtimeconfig.dev.json
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Toll-Calculator-API.dll
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Toll-Calculator-API.pdb
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Humanizer.dll
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.csproj.CoreCompileInputs.cache
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.MvcApplicationPartsAssemblyInfo.cache
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.dll
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.pdb
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.genruntimeconfig.cache
