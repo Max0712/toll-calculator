@@ -12,7 +12,5 @@ namespace Toll_Calculator_API.DbModels
         public DateTime To { get; set; }
         public decimal Fee { get; set; }
 
-        public virtual Vehicle Vehicle { get; set; }
-
     }
 }

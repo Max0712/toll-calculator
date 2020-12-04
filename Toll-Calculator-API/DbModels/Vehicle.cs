@@ -7,15 +7,14 @@ namespace Toll_Calculator_API.DbModels
     {
         public Vehicle()
         {
-            TollFees = new HashSet<TollFee>();
+            VehicleTollEvents = new HashSet<VehicleTollEvent>();
         }
 
         public long Id { get; set; }
         public string RegistrationNumber { get; set; }
         public long VehicleTypeId { get; set; }
-
         public virtual VehicleType VehicleType { get; set; }
-        public virtual ICollection<TollFee> TollFees { get; set; }
+        public virtual ICollection<VehicleTollEvent> VehicleTollEvents { get; set; }
 
     }
 }

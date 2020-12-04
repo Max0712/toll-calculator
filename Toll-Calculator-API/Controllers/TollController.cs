@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Toll_Calculator_API.Models;
-using System.ComponentModel.DataAnnotations;
 using Toll_Calculator_API.DbModels;
 using Toll_Calculator_API.Services;
 using AutoMapper;
@@ -27,12 +23,12 @@ namespace Toll_Calculator_API.Controllers
 
         [Route("event")]
         [HttpPost]
-        public async Task<IActionResult> RegisterTollEvent([FromBody]TollEventRegistration body)
+        public async Task<IActionResult> RegisterTollEvent([FromBody] TollEventRegistration body)
         {
             var insertResult = await _tollService.AddTollEvent(new VehicleTollEvent
             {
                 EventTime = body.EventTime.Value,
-                RegistrationNumber = body.RegistrationNumber                
+                RegistrationNumber = body.RegistrationNumber
             });
 
             if (!insertResult.IsSuccessStatusCode())
@@ -42,6 +38,20 @@ namespace Toll_Calculator_API.Controllers
             await VehicleToTollUpdate(body, insertResult.Result.Id);
 
             return Ok(body);
+        }
+
+        [Route("getsum")]
+        [HttpGet]
+        public async Task<IActionResult> GetVehicleTullSum([FromBody] VehicleTollSum body)
+        {
+            var vehicle = await _tollService.SelectVehicleAndEvents(body.RegistrationNumber, body.StartDate, body.EndDate);
+
+            if (vehicle.VehicleType.IsFree)
+                return Ok(0);
+
+            var tollFeeList = await _tollService.SelectAllTollFees(); 
+
+            return Ok();
         }
 
         private async Task<Exception> VehicleToTollUpdate(TollEventRegistration body, long tollEventId)
@@ -69,5 +79,7 @@ namespace Toll_Calculator_API.Controllers
 
             return null;
         }
+
+
     }
 }

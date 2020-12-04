@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Toll_Calculator_API.DbModels;
 using Toll_Calculator_API.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Toll_Calculator_API.Services
 {
@@ -13,6 +15,8 @@ namespace Toll_Calculator_API.Services
         Task<VehicleType> SelectVehicleType(string type);
         Task<ServiceResult<Vehicle>> AddVehicle(Vehicle vehicle);
         Task<ServiceResult<VehicleTollEvent>> SetTollEventVehicle(long tollEventId, long vehicleId);
+        Task<Vehicle> SelectVehicleAndEvents(string registrationNumber, DateTime startDate, DateTime endDate);
+        Task<IEnumerable<TollFee>> SelectAllTollFees();
     }
 
     public class TollService : ITollService
@@ -41,13 +45,13 @@ namespace Toll_Calculator_API.Services
 
         public async Task<Vehicle> SelectVehicle(string registrationNumber)
         {
-            return await _context.Vehicle.FirstOrDefaultAsync(x => x.RegistrationNumber == registrationNumber);            
+            return await _context.Vehicle.FirstOrDefaultAsync(x => x.RegistrationNumber == registrationNumber);
         }
 
         public async Task<VehicleType> SelectVehicleType(string type)
         {
             var vehicleType = await _context.VehicleType.FirstOrDefaultAsync(x => x.Type == type);
-            if(vehicleType == null)
+            if (vehicleType == null)
                 vehicleType = await _context.VehicleType.FirstOrDefaultAsync(x => x.Type == "Default");
 
             return vehicleType;
@@ -82,8 +86,23 @@ namespace Toll_Calculator_API.Services
             }
             catch (Exception ex)
             {
-                return new ServiceResult<VehicleTollEvent>(ex);                
-            }            
+                return new ServiceResult<VehicleTollEvent>(ex);
+            }
+        }
+
+        public async Task<Vehicle> SelectVehicleAndEvents(string registrationNumber, DateTime startDate, DateTime endDate)
+        {
+            return await _context.Vehicle
+                .Where(x => x.RegistrationNumber == registrationNumber)
+                .Include(x => x.VehicleType)
+                .Include(x => x.VehicleTollEvents.Select(x => x.EventTime > startDate && x.EventTime < endDate))
+                .FirstOrDefaultAsync();
+
+        }
+
+        public async Task<IEnumerable<TollFee>> SelectAllTollFees()
+        {
+            return await _context.TollFee.ToListAsync();
         }
     }
 }
