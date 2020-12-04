@@ -7,6 +7,7 @@ F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcore
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Toll-Calculator-API.runtimeconfig.dev.json
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Toll-Calculator-API.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Toll-Calculator-API.pdb
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\AutoMapper.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Humanizer.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
@@ -49,6 +50,8 @@ F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcore
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.AssemblyInfoInputs.cache
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.AssemblyInfo.cs
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.csproj.CoreCompileInputs.cache
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.MvcApplicationPartsAssemblyInfo.cache
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.RazorTargetAssemblyInfo.cache
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.csproj.CopyComplete
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\staticwebassets\Toll-Calculator-API.StaticWebAssets.Manifest.cache
@@ -56,7 +59,3 @@ F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcore
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.pdb
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.genruntimeconfig.cache
-F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.csprojAssemblyReference.cache
-F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.csproj.CoreCompileInputs.cache
-F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.MvcApplicationPartsAssemblyInfo.cache
-F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\AutoMapper.dll

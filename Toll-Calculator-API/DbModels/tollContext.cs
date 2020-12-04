@@ -17,11 +17,11 @@ namespace Toll_Calculator_API.DbModels
         {
         }
 
-        public virtual DbSet<Log> Logs { get; set; }
-        public virtual DbSet<VehicleType> VehicleTypes { get; set; }
-        public virtual DbSet<Vehicle> Vehicles { get; set; }
-        public virtual DbSet<TollFee> TollFees { get; set; }
-        public virtual DbSet<VehicleTollEvent> VehicleTollEvents { get; set; }
+        public virtual DbSet<Log> Log { get; set; }
+        public virtual DbSet<VehicleType> VehicleType { get; set; }
+        public virtual DbSet<Vehicle> Vehicle { get; set; }
+        public virtual DbSet<TollFee> TollFee { get; set; }
+        public virtual DbSet<VehicleTollEvent> VehicleTollEvent { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

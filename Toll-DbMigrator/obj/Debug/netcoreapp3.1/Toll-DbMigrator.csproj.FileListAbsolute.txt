@@ -65,9 +65,6 @@ F:\Coastal Code\evolve\toll-calculator\Toll-DbMigrator\obj\Debug\netcoreapp3.1\T
 F:\Coastal Code\evolve\toll-calculator\Toll-DbMigrator\obj\Debug\netcoreapp3.1\Toll-DbMigrator.dll
 F:\Coastal Code\evolve\toll-calculator\Toll-DbMigrator\obj\Debug\netcoreapp3.1\Toll-DbMigrator.pdb
 F:\Coastal Code\evolve\toll-calculator\Toll-DbMigrator\obj\Debug\netcoreapp3.1\Toll-DbMigrator.genruntimeconfig.cache
-F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
-F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
-F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\Toll-DbMigrator.exe
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\Toll-DbMigrator.deps.json
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\Toll-DbMigrator.runtimeconfig.json
@@ -102,14 +99,17 @@ F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\de-DE\FluentMigrator.Abstractions.resources.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
@@ -124,6 +124,7 @@ F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\obj\Debug\netcoreapp3.1\Toll-DbMigrator.csprojAssemblyReference.cache
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\obj\Debug\netcoreapp3.1\Toll-DbMigrator.AssemblyInfoInputs.cache
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\obj\Debug\netcoreapp3.1\Toll-DbMigrator.AssemblyInfo.cs
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-DbMigrator\obj\Debug\netcoreapp3.1\Toll-DbMigrator.csproj.CoreCompileInputs.cache

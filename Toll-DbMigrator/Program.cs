@@ -2,6 +2,7 @@
 using Toll_DbMigrator.Migrations;
 using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
+using System.IO;
 
 namespace Toll_DbMigrator
 {
@@ -12,6 +13,8 @@ namespace Toll_DbMigrator
             var serviceProvider = CreateServices();
             var isUp = true;
             Int64 targetVersion = 0;
+
+            Directory.CreateDirectory("c:\\temp");
 
             using (var scope = serviceProvider.CreateScope())
             {
@@ -36,7 +39,7 @@ namespace Toll_DbMigrator
                 .AddFluentMigratorCore()
                 .ConfigureRunner(rb => rb
                     .AddSQLite()                    
-                    .WithGlobalConnectionString("Data Source=../../../../toll.db")                    
+                    .WithGlobalConnectionString("Data Source=c:\\temp\\toll.db")                    
                     .ScanIn(typeof(_0001_AddTable_Log).Assembly).For.Migrations())
                 .AddLogging(lb => lb.AddFluentMigratorConsole())
                 .BuildServiceProvider(false);

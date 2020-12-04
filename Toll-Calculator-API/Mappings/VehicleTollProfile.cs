@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Toll_Calculator_API.DbModels;
 using Toll_Calculator_API.Models;
 
@@ -22,8 +18,7 @@ namespace Toll_Calculator_API.Mappings
             CreateMap<VehicleTollEvent, VehicleTollEventModel>();
 
             CreateMap<TollFeeModel, TollFee>();
-            CreateMap<TollFee, TollFeeModel>();
-          
+            CreateMap<TollFee, TollFeeModel>();          
         }
     }
 }
