@@ -1,3 +1,8 @@
 * Migration för att det är lätt att byta till t.ex. en MsSQL-databas.
 * SQLite för snabbt-test. (Lämnar i debug-mapp, lätt att byta i produktion)
 * Vi väljer att spara varje vägtulls-händelse, oavsett fordonstyp mm. för att lättare möta eventulla förändringar i framtiden. Eller statistik mm.
+* Primary Key får vara INT pga. SQLite.
+* Vi gör "antagandet" att man inte behöver tidszoner så allt går efter systemtid.
+* Vi väljer att uppdatera vehicletype vid varje slagning mot vehicle, även om en bil under normala omständigheter INTE byter typ.
+	- Säkerhet om någon t.ex. fuskar eftersom vi inte slår mot något register i vår lösning.
+

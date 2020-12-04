@@ -16,7 +16,7 @@ namespace Toll_Calculator_API.Services
     {
         public async Task<ServiceResult<VehicleTollEvent>> AddTollEvent(VehicleTollEventModel vehicleTollEvent)
         {
-
+            return null;
         }
     }
 }

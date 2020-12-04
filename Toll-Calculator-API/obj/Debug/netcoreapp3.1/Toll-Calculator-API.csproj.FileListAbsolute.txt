@@ -59,3 +59,4 @@ F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcore
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.csprojAssemblyReference.cache
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.csproj.CoreCompileInputs.cache
 F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\obj\Debug\netcoreapp3.1\Toll-Calculator-API.MvcApplicationPartsAssemblyInfo.cache
+F:\Loumax\EvolveTechnology\toll-calculator\Toll-Calculator-API\bin\Debug\netcoreapp3.1\AutoMapper.dll
