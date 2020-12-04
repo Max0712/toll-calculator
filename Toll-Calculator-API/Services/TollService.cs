@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Toll_Calculator_API.DbModels;
 using Toll_Calculator_API.Models;
@@ -9,14 +7,31 @@ namespace Toll_Calculator_API.Services
 {
     public interface ITollService
     {
-        Task<ServiceResult<VehicleTollEvent>> AddTollEvent(VehicleTollEventModel vehicleTollEvent);
+        Task<ServiceResult<VehicleTollEvent>> AddTollEvent(VehicleTollEvent vehicleTollEvent);
     }
 
     public class TollService : ITollService
     {
-        public async Task<ServiceResult<VehicleTollEvent>> AddTollEvent(VehicleTollEventModel vehicleTollEvent)
-        {
+        private tollContext _context;
 
+        public TollService(tollContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<ServiceResult<VehicleTollEvent>> AddTollEvent(VehicleTollEvent vehicleTollEvent)
+        {
+            try
+            {
+                await _context.VehicleTollEvents.AddAsync(vehicleTollEvent);
+                await _context.SaveChangesAsync();
+
+                return new ServiceResult<VehicleTollEvent>(vehicleTollEvent);
+            }
+            catch (Exception ex)
+            {
+                return new ServiceResult<VehicleTollEvent>(ex);
+            }
         }
     }
 }
