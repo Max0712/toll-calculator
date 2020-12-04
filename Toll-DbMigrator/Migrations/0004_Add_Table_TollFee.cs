@@ -4,12 +4,12 @@ using System;
 namespace Toll_DbMigrator.Migrations
 {
     [Migration(0004)]
-    class _0004_Add_Table_TollFee : Migration
+    public class _0004_Add_Table_TollFee : Migration
     {
         public override void Up()
         {
             Create.Table("TollFee")
-             .WithColumn("Id").AsGuid().NotNullable().PrimaryKey().WithDefault(SystemMethods.NewGuid)
+             .WithColumn("Id").AsInt64().PrimaryKey().Identity()
              .WithColumn("From").AsDateTime().NotNullable()
              .WithColumn("To").AsDateTime().NotNullable()
              .WithColumn("Fee").AsDecimal().NotNullable();

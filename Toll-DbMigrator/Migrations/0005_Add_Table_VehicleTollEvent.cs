@@ -3,13 +3,13 @@
 namespace Toll_DbMigrator.Migrations
 {
     [Migration(0005)]
-    class _0005_Add_Table_VehicleTollEvent : Migration
+    public class _0005_Add_Table_VehicleTollEvent : Migration
     {
         public override void Up()
         {
             Create.Table("VehicleTollEvent")
-                .WithColumn("Id").AsGuid().NotNullable().PrimaryKey().WithDefault(SystemMethods.NewGuid)
-                .WithColumn("EventTime").AsDateTime().NotNullable().WithDefault(SystemMethods.CurrentUTCDateTime)
+                .WithColumn("Id").AsInt64().PrimaryKey().Identity()
+                .WithColumn("EventTime").AsDateTime().NotNullable()
                 .WithColumn("VehicleId").AsGuid().NotNullable();
 
             Create.ForeignKey()

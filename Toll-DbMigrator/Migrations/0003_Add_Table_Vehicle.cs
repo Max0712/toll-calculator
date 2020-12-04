@@ -3,12 +3,12 @@
 namespace Toll_DbMigrator.Migrations
 {
     [Migration(0003)]
-    class _0003_Add_Table_Vehicle : Migration
+    public class _0003_Add_Table_Vehicle : Migration
     {
         public override void Up()
         {
             Create.Table("Vehicle")
-                .WithColumn("Id").AsGuid().NotNullable().PrimaryKey().WithDefault(SystemMethods.NewGuid)
+                .WithColumn("Id").AsInt64().PrimaryKey().Identity()
                 .WithColumn("RegistrationNumber").AsString().NotNullable()
                 .WithColumn("VehicleTypeId").AsGuid().NotNullable();
 
