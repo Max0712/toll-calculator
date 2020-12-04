@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Loumax\\EvolveTechnology\\toll-calculator\\Toll-DbMigrator\\Toll-DbMigrator.csproj": {}
+    "F:\\Coastal Code\\evolve\\toll-calculator\\Toll-DbMigrator\\Toll-DbMigrator.csproj": {}
   },
   "projects": {
-    "F:\\Loumax\\EvolveTechnology\\toll-calculator\\Toll-DbMigrator\\Toll-DbMigrator.csproj": {
+    "F:\\Coastal Code\\evolve\\toll-calculator\\Toll-DbMigrator\\Toll-DbMigrator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Loumax\\EvolveTechnology\\toll-calculator\\Toll-DbMigrator\\Toll-DbMigrator.csproj",
+        "projectUniqueName": "F:\\Coastal Code\\evolve\\toll-calculator\\Toll-DbMigrator\\Toll-DbMigrator.csproj",
         "projectName": "Toll-DbMigrator",
-        "projectPath": "F:\\Loumax\\EvolveTechnology\\toll-calculator\\Toll-DbMigrator\\Toll-DbMigrator.csproj",
-        "packagesPath": "C:\\Users\\max\\.nuget\\packages\\",
-        "outputPath": "F:\\Loumax\\EvolveTechnology\\toll-calculator\\Toll-DbMigrator\\obj\\",
+        "projectPath": "F:\\Coastal Code\\evolve\\toll-calculator\\Toll-DbMigrator\\Toll-DbMigrator.csproj",
+        "packagesPath": "C:\\Users\\louiz\\.nuget\\packages\\",
+        "outputPath": "F:\\Coastal Code\\evolve\\toll-calculator\\Toll-DbMigrator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\max\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\louiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -31,6 +30,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "FluentMigrator": {
               "target": "Package",
@@ -71,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
