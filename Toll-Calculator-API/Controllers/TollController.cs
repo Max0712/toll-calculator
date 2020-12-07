@@ -5,6 +5,7 @@ using Toll_Calculator_API.Models;
 using Toll_Calculator_API.DbModels;
 using Toll_Calculator_API.Services;
 using AutoMapper;
+using Toll_Calculator_API.Calculations;
 
 namespace Toll_Calculator_API.Controllers
 {
@@ -14,11 +15,13 @@ namespace Toll_Calculator_API.Controllers
     {
         private readonly IMapper _mapper;
         private readonly ITollService _tollService;
+        private readonly ITollCalulations _tollCalculations;
 
-        public TollController(IMapper mapper, ITollService tollService)
+        public TollController(IMapper mapper, ITollService tollService, ITollCalulations tollCalulations)
         {
             _mapper = mapper;
             _tollService = tollService;
+            _tollCalculations = tollCalulations;
         }
 
         [Route("event")]
@@ -50,11 +53,9 @@ namespace Toll_Calculator_API.Controllers
             if (vehicle.VehicleType.IsFree)
                 return Ok(new VehicleTollSummary());
 
-            //Använd "TollCalculations" för att summera resultat per dag
-            //Returnera som VehicleTollSummary
-            //
+            var result = await _tollCalculations.CalculateTollSummary(vehicle.VehicleTollEvents, fromDate, toDate);
 
-            return Ok();
+            return Ok(result);
         }
 
         private async Task<ServiceResult<bool>> VehicleToTollUpdate(TollEventRegistration body, long tollEventId)

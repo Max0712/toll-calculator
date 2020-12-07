@@ -16,7 +16,7 @@ namespace Toll_Calculator_API.Services
         Task<ServiceResult<Vehicle>> AddVehicle(Vehicle vehicle);
         Task<ServiceResult<VehicleTollEvent>> SetTollEventVehicle(long tollEventId, long vehicleId);
         Task<Vehicle> SelectVehicleAndEvents(string registrationNumber, DateTime startDate, DateTime endDate);
-        Task<IEnumerable<TollFee>> SelectAllTollFees();
+        Task<IEnumerable<TollFee>> SelectAllTollFees();        
     }
 
     public class TollService : ITollService

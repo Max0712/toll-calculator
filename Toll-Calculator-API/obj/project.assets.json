@@ -282,6 +282,15 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
+      "Nager.Date/1.26.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Nager.Date.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nager.Date.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.4": {
         "type": "package",
         "dependencies": {
@@ -924,6 +933,26 @@
         "version.txt"
       ]
     },
+    "Nager.Date/1.26.6": {
+      "sha512": "HLjcXfVFzDlaKGMLPvsQw1EvVXMEAxs5im5l6o5UG25jbUGH+f4sJR2rWm3rAhqPhu4pXbjR/e+nyfW05RMJ5Q==",
+      "type": "package",
+      "path": "nager.date/1.26.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "calendar.png",
+        "lib/net45/Nager.Date.dll",
+        "lib/net45/Nager.Date.xml",
+        "lib/net461/Nager.Date.dll",
+        "lib/net461/Nager.Date.xml",
+        "lib/netstandard2.0/Nager.Date.dll",
+        "lib/netstandard2.0/Nager.Date.xml",
+        "nager.date.1.26.6.nupkg.sha512",
+        "nager.date.nuspec",
+        "readme.txt"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.4": {
       "sha512": "f5U8Sw0lRym8tTraJ2zm6OqcDrcrEVvcKDtYlKSLs3Ox9SerkwkPXiFXb/uiW0g2tJdUw6oBhsxI/l5DoRxXMg==",
       "type": "package",
@@ -1270,7 +1299,8 @@
       "AutoMapper >= 10.1.1",
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
+      "Nager.Date >= 1.26.6"
     ]
   },
   "packageFolders": {
@@ -1334,6 +1364,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "Nager.Date": {
+            "target": "Package",
+            "version": "[1.26.6, )"
           }
         },
         "imports": [

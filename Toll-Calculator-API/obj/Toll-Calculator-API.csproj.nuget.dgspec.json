@@ -60,6 +60,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Nager.Date": {
+              "target": "Package",
+              "version": "[1.26.6, )"
             }
           },
           "imports": [

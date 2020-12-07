@@ -8,6 +8,7 @@ using AutoMapper;
 using Toll_Calculator_API.DbModels;
 using Toll_Calculator_API.Services;
 using Toll_Calculator_API.Mappings;
+using Toll_Calculator_API.Calculations;
 
 namespace Toll_Calculator_API
 {
@@ -32,6 +33,7 @@ namespace Toll_Calculator_API
             services.AddDbContext<tollContext>(options => options.UseSqlite(Configuration["ConnectionStrings:TollDatabase"]));
             
             services.AddScoped<ITollService, TollService>();
+            services.AddScoped<ITollCalulations, TollCalculations>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
