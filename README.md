@@ -1,4 +1,4 @@
-# Toll fee calculator 1.0 -- Coastal Code Example
+# Toll fee calculator 2.0 -- Coastal Code Example
 A calculator for vehicle toll fees.
 
 * SQLite databas skapas via migration-projektet. Körs som console och lägger toll.db i c:\temp
